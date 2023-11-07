@@ -20,6 +20,7 @@ input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   pixelLocation = 0
   sprite = game.createSprite(0, 0)
+
   // start loop
   while (pixelLocation <= 5) {
     sprite.set(LedSpriteProperty.X, pixelLocation)
@@ -27,11 +28,10 @@ input.onButtonPressed(Button.A, function () {
     pixelLocation = pixelLocation + 1
     basic.pause(500)
   }
+
   sprite.delete()
   basic.showIcon(IconNames.Happy)
 })
-
-
 
 // pixels move up in a diagonal
 input.onButtonPressed(Button.B, function () {
@@ -39,6 +39,7 @@ input.onButtonPressed(Button.B, function () {
   basic.clearScreen()
   pixelLocation = 5
   sprite = game.createSprite(0, 0)
+
   // start loop
   while (pixelLocation >= 0) {
     sprite.set(LedSpriteProperty.X, pixelLocation)
@@ -46,6 +47,7 @@ input.onButtonPressed(Button.B, function () {
     pixelLocation = pixelLocation - 1
     basic.pause(500)
   }
+  
   sprite.delete()
   basic.showIcon(IconNames.Happy)
 })
