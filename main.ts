@@ -47,7 +47,7 @@ input.onButtonPressed(Button.B, function () {
     pixelLocation = pixelLocation - 1
     basic.pause(500)
   }
-  
+
   sprite.delete()
   basic.showIcon(IconNames.Happy)
 })
